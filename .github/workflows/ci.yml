@@ -2,9 +2,8 @@ name: CI .NET con NUnit
 
 on:
   push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "master", "main" ]
+  workflow_dispatch:
 
 jobs:
   build-and-test:
